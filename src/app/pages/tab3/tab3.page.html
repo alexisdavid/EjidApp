@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Denuncia ciudadana
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-card color="light">
+    <ion-card-header>
+
+      <h5>Ayudanos a combatir la corrupcion</h5>
+      <p>A travez de esta seccion podras realizar denuncias de funcionarios, incidentes con trabajadores de la
+        delegacion, ayudanos a ser un gobierno diferente</p>
+      <h3>TU DENUNCIA ES ANONIMA</h3>
+
+    </ion-card-header>
+    <ion-card-content>
+
+      <ion-label position='floating'>nombre:</ion-label>
+
+      <ion-item class="sep">
+        <ion-input type='email' required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+          name='email'></ion-input>
+      </ion-item>
+
+      <ion-label position='floating'>email:</ion-label>
+      <ion-item>
+
+        <ion-input type='email' required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+          name='email'></ion-input>
+      </ion-item>
+
+      <ion-label position='floating'>telefono:</ion-label>
+      <ion-item class="sep">
+
+        <ion-input required type='number' name='password'></ion-input>
+      </ion-item>
+
+      <ion-label>Denuncia</ion-label>
+      <ion-item class="sep">
+
+        <ion-textarea rows="10" cols="50" placeholder="Trata de ser lo mas especifico posible..."></ion-textarea>
+      </ion-item>
+
+
+      <ion-button type='submit' expand='full' [disabled]='formulario.invalid'>
+        Denunciar
+      </ion-button>
+
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

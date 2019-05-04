@@ -1,0 +1,52 @@
+<ion-header no-border>
+  <ion-toolbar color="primary">
+
+    <ion-buttons slot="start">
+      <ion-icon slot="icon-only" name="bonfire"></ion-icon>
+    </ion-buttons>
+
+
+    <ion-title>
+      EjidApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" size-lg="3" size-md="4" size-sm="6" size-xs="12" *ngFor="let item of [1,1,1,1,1,1,1]">
+
+        <div class="post">
+          <ion-item>
+            <ion-label>Titulo de Noticia</ion-label>
+          </ion-item>
+          <ion-slides mode="ios" pager="ios" scrollbar="ios">
+            <ion-slide>
+              <ion-img src="/assets/foto.jpg"></ion-img>
+            </ion-slide>
+            <ion-slide>
+              <ion-img src="/assets/stiker.png"></ion-img>
+            </ion-slide>
+
+          </ion-slides>
+          <ion-item>
+            <ion-icon slot="start" name="heart-empty"></ion-icon>
+            <ion-icon slot="end" name="bookmark"></ion-icon>
+          </ion-item>
+          <ion-item detail [routerLink]="['/noticia']">
+            <ion-label text-wrap>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellat, facilis beatae
+              autem, non ad deserunt debitis error rem officiis necessitatibus assumenda ipsam dignissimos? Sequi in
+              recusandae eveniet dolores natus. Label</ion-label>
+          </ion-item>
+
+        </div>
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>
